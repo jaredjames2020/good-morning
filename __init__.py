@@ -9,6 +9,9 @@ class GoodMorningSkill(MycroftSkill):
 
   def __init__(self):
     super(GoodMorningSkill, self).__init__(name="GoodMorningSkill")
+    
+  def initialize(self):
+    super(GoodMorningSkill, self).initialize()
 
   def handle_GoodMorning_intent(self, message):
     self.speak_dialog("goodmorning")
